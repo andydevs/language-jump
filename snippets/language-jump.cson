@@ -1,0 +1,49 @@
+'.source.jump':
+    'constant':
+        'prefix': 'co'
+        'body': 'const ${1:name} = ${2:Null}'
+    'var':
+        'prefix': 'va'
+        'body': 'var ${1:name}'
+    'var init':
+        'prefix': 'vi'
+        'body': 'var ${1:name} = ${2:Null}'
+    'stream':
+        'prefix': 'str'
+        'body': 'stream ${1:name} = ${2:ArrayStream}'
+    'state':
+        'prefix': 'sta'
+        'body': 'state ${1:name}'
+    'print':
+        'prefix': 'pr'
+        'body': 'print ${1:value}'
+    'print to':
+        'prefix': 'pt'
+        'body': 'print ${1:value} -> ${2:stdout}'
+    'read':
+        'prefix': 're'
+        'body': 'read ${1:value}'
+    'read from':
+        'prefix': 'rf'
+        'body': 'read ${1:stdin} -> ${2:value}'
+    'to':
+        'prefix': 'to'
+        'body': 'to ${1:state}'
+    'to if':
+        'prefix': 'ti'
+        'body': 'to ${1:state} if ${2:condition}'
+    'to otherwise':
+        'prefix': 'te'
+        'body': 'to ${1:state} otherwise'
+    'loop if':
+        'prefix': 'li'
+        'body': 'loop if ${1:condition}'
+    'loop otherwise':
+        'prefix': 'le'
+        'body': 'loop otherwise'
+    'end if':
+        'prefix': 'ei'
+        'body': 'end if ${1:condition}'
+    'end otherwise':
+        'prefix': 'ee'
+        'body': 'end otherwise'
