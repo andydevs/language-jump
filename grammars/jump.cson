@@ -64,7 +64,7 @@
                 'name': 'string.quoted.double.jump'
                 'patterns': [
                     {
-                        'match': '\\.'
+                        'match': '\\\\[abefnprtv\'"?]'
                         'name': 'constant.character.escape.jump'
                     }
                 ]
@@ -82,7 +82,7 @@
                 'name': 'string.quoted.single.jump'
                 'patterns': [
                     {
-                        'match': '\\.'
+                        'match': '\\\\[abefnprtv\'"?]'
                         'name': 'constant.character.escape.jump'
                     }
                 ]
