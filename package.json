@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "name": "language-jump",
+    "description": "Atom language definitions for Jump",
+    "repository": {
+        "type": "git",
+        "url": "https//github.com/andydevs/language-jump.git"
+    },
+    "license": "GPL-3.0",
+    "engines": {
+        "atom": "*"
+    }
+}

@@ -1,0 +1,90 @@
+'name': 'Jump'
+'scopeName': 'source.jump'
+'filetypes': ['jump']
+'patterns': [
+    {
+        # Strings
+        'include': '#strings'
+    }
+    {
+        # Comments
+        'match': '#.*$'
+        'name': 'comment.line.number-sign.jump'
+    }
+    {
+        # Control Keywords
+        'match': '\\b(const|var|stream|print|read|to|loop|end|if|otherwise)\\b'
+        'name': 'keyword.control.jump'
+    }
+    {
+        # Operator Keywords
+        'match': '\\b(and|or|not)\\b'
+        'name': 'keyword.operator.jump'
+    }
+    {
+        # State Definition
+        'match': '\\b(state)\\b\\s*\\b([A-Za-z][A-Za-z0-9_]*)\\b'
+        'captures':
+            '0':
+                'name': 'meta.function.jump'
+            '1':
+                'name': 'storage.type.jump'
+            '2':
+                'name': 'entity.name.function.jump'
+    }
+    {
+        # Stream Value Definition
+        'match': '\\b(ArrayStream|FileStream)\\b'
+        'name': 'support.constant.jump'
+    }
+    {
+        # Numeric Constant
+        'match': '\\b[0-9]+(?:\\.[0-9]+)?(?:[iuf](?:8|16|32|64))?'
+        'name': 'constant.numeric.jump'
+    }
+    {
+        # Language Constant
+        'match': '\\b(True|False|Null)\\b'
+        'name': 'constant.language.jump'
+    }
+]
+'repository':
+    'strings':
+        'patterns': [
+            {
+                # Double Quoted String
+                'begin': '"'
+                'beginCaptures':
+                    '0':
+                        'name': 'punctuation.definition.string.begin.jump'
+                'end': '"'
+                'endCaptures':
+                    '0':
+                        'name': 'punctuation.definition.string.end.jump'
+                'name': 'string.quoted.double.jump'
+                'patterns': [
+                    {
+                        'match': '\\.'
+                        'name': 'constant.character.escape.jump'
+                    }
+                ]
+            }
+            {
+                # Single Quoted String
+                'begin': '''
+                'beginCaptures':
+                    '0':
+                        'name': 'punctuation.definition.string.begin.jump'
+                'end': '''
+                'endCaptures':
+                    '0':
+                        'name': 'punctuation.definition.string.end.jump'
+                'name': 'string.quoted.single.jump'
+                'patterns': [
+                    {
+                        'match': '\\.'
+                        'name': 'constant.character.escape.jump'
+                    }
+                ]
+            }
+        ]
