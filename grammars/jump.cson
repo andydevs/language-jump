@@ -1,6 +1,6 @@
 'name': 'Jump'
 'scopeName': 'source.jump'
-'filetypes': ['jump']
+'fileTypes': ['jump']
 'patterns': [
     {
         # Strings
