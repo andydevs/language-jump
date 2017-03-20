@@ -19,13 +19,13 @@
         'body': 'print ${1:value}'
     'print to':
         'prefix': 'pt'
-        'body': 'print ${1:value} -> ${2:stdout}'
+        'body': 'print ${1:value} to ${2:stdout}'
     'read':
         'prefix': 're'
         'body': 'read ${1:value}'
     'read from':
         'prefix': 'rf'
-        'body': 'read ${1:stdin} -> ${2:value}'
+        'body': 'read ${1:stdin} from ${2:value}'
     'to':
         'prefix': 'to'
         'body': 'to ${1:state}'
