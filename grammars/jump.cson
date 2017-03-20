@@ -13,7 +13,7 @@
     }
     {
         # Control Keywords
-        'match': '\\b(const|var|stream|print|read|to|loop|end|if|otherwise)\\b'
+        'match': '\\b(const|var|stream|print|read|to|from|loop|end|if|otherwise)\\b'
         'name': 'keyword.control.jump'
     }
     {
