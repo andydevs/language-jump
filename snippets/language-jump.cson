@@ -10,7 +10,7 @@
         'body': 'var ${1:name} = ${2:Null}'
     'stream':
         'prefix': 'str'
-        'body': 'stream ${1:name} = ${2:ArrayStream}'
+        'body': 'stream ${1:name} = ${2:ArrayStream}(${3})'
     'state':
         'prefix': 'sta'
         'body': 'state ${1:name}'
