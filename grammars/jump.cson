@@ -35,7 +35,7 @@
     {
         # Stream Value Definition
         'match': '\\b(ArrayStream|FileStream)\\b'
-        'name': 'support.constant.jump'
+        'name': 'support.function.jump'
     }
     {
         # Numeric Constant
